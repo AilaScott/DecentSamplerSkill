@@ -62,38 +62,7 @@ Codex CLI reads `AGENTS.md` for project-level context when working on DecentSamp
 
 ---
 
-## Quick Start
 
-Create a `MyInstrument.dspreset` file and a `Samples/` folder with your audio files:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<DecentSampler minVersion="1.0.0">
-  <ui width="812" height="375" bgColor="FF1A1A2E">
-    <tab name="main">
-      <labeled-knob x="445" y="75" width="90" label="Attack"
-                    type="float" minValue="0.0" maxValue="4.0" value="0.01">
-        <binding type="amp" level="instrument" position="0" parameter="ENV_ATTACK"/>
-      </labeled-knob>
-      <labeled-knob x="515" y="75" width="90" label="Release"
-                    type="float" minValue="0.0" maxValue="20.0" value="1">
-        <binding type="amp" level="instrument" position="0" parameter="ENV_RELEASE"/>
-      </labeled-knob>
-    </tab>
-  </ui>
-  <effects>
-    <effect type="lowpass" frequency="22000.0"/>
-    <effect type="reverb" wetLevel="0.5"/>
-  </effects>
-  <groups attack="0.0" decay="1.0" sustain="0.0" release="1.0">
-    <group name="Main">
-      <sample path="Samples/YourSample.wav" rootNote="60" loNote="0" hiNote="127"/>
-    </group>
-  </groups>
-</DecentSampler>
-```
-
-Load in DecentSampler, validate via **File > Developer Tools > Validate Preset**, and adjust.
 
 ---
 

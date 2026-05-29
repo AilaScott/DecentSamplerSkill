@@ -1,5 +1,3 @@
-# DecentSampler Skills
-
 Most agents have basically no knowledge of DecentSampler, so I made a comprehensive agent skill for developing, troubleshooting, and fixing libraries for DecentSampler!
 
 Tested with OpenCode and Deepseek V4 Flash.
